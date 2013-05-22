@@ -1,0 +1,246 @@
+.header
+  width: 100%
+  background: #fff
+  padding: 50px 0
+  .logo
+    margin: 0px auto
+    margin-bottom: 25px
+    width: 125px
+    height: 125px
+    line-height: 125px
+    text-align: center
+    border-radius: 125px
+    background: $soft_orange_color
+    color: #fff
+    font-size: 72px
+
+  .slogan
+    font-size: 32px
+    font-weight: 200
+    color: $soft_orange_color
+    width: 600px
+    text-align: center
+    margin: 0px auto
+
+
+.special-offer
+  height: 175px
+  padding-top: 25px
+  background: $soft_orange_color
+  color: #fff
+  text-align: center
+  cursor: pointer
+
+  h1
+    color: #fff
+
+  .title
+    float: right
+    padding: 10px
+    font-size: 24px
+    font-weight: 200
+    background: $soft_blue_color
+    color: #fff
+
+  .description
+    width: 500px
+    margin: 0px auto
+
+    p
+      font-size: 16px
+      line-height: 1.5
+
+
+.benefits-header
+  margin-bottom: 50px
+  text-align: center
+  font-size: 72px
+  color: $soft_blue_color
+
+.benefits
+  margin-bottom: 50px
+  @include thumbnails_parent
+
+  .benefit
+    float: left
+    width: 225px
+    height: 225px
+    margin-right: 20px
+    background: #fff
+    &:last-child
+      margin-right: 0px
+
+    .title
+      background: $soft_blue_color
+      color: #fff
+      height: 40px
+      line-height: 40px
+
+      h5
+        color: #fff
+        margin-left: 15px
+
+    .description
+      margin-top: 10px
+      padding: 10px
+
+      p
+        font-size: 14px
+
+.solutions-header
+  margin-bottom: 50px
+  text-align: center
+  font-size: 72px
+  color: $soft_orange_color
+
+
+.solutions
+  @include thumbnails_parent
+
+  .solution
+    float: left
+    width: 440px
+    height: 225px
+    background: #fff
+    &:nth-child(2n)
+      margin-right: 0px
+      float: right
+
+
+    .head-line
+      height: 48px
+      width: 440px
+      //@include thumbnails_parent
+
+
+      .icon
+        float: left
+        height: 48px
+        width: 48px
+        background: $soft_orange_color
+        border-radius: 48px
+
+        @mixin solution_icon
+          width: 32px
+          height: 32px
+          margin-top: 8px
+          margin-left: 8px
+
+        .crm-icon
+          background: url('/assets/icons/icon-barchartalt.png') no-repeat
+          @include solution_icon
+
+        .zero-olo
+          background: url('/assets/icons/icon-timeline.png') no-repeat
+          @include solution_icon
+
+        .optimization-icon
+          background: url('/assets/icons/icon-calendarthree.png') no-repeat
+          @include solution_icon
+
+        .low-cost-icon
+          background: url('/assets/icons/icon-piggybank.png') no-repeat
+          @include solution_icon
+
+        .garant-icon
+          background: url('/assets/icons/icon-bank.png') no-repeat
+          @include solution_icon
+
+        .result-icon
+          background: url('/assets/icons/icon-alienship.png') no-repeat
+          @include solution_icon
+
+
+      .title
+        float: left
+        margin-left: 20px
+        height: 48px
+        width: 370px
+        line-height: 48px
+
+
+        h5
+          font-size: 16px
+          color: $soft_orange_color
+
+    .description
+      margin-top: 10px
+
+      p
+        font-size: 14px
+        line-height: 1.5
+
+
+#form
+  padding: 50px 0
+  @include thumbnails_parent
+  .left-part
+    width: 280px
+    float: left
+
+
+    .title
+      font-size: 24px
+      color: $soft_blue_color
+
+    .comment
+      margin-top: 50px
+      p
+        font-size: 14px
+        line-height: 1.5
+
+  .right-part
+    width: 560px
+    float: right
+
+    form
+      input
+        height: 40px
+        @include form_input
+
+      textarea
+        @include form_input
+        height: 100px
+        padding: 15px
+        font-size: 16px
+
+      .submit
+        margin-top: 25px
+        width: 530px
+        height: 60px
+        line-height: 60px
+        text-align: center
+        letter-spacing: 1px
+        font-weight: 200
+        font-size: 24px
+        color: #fff
+        background: $soft_orange_color
+        padding: 0px 15px
+        cursor: pointer
+        border-radius: 2px
+
+      .error
+        display: none
+        background: $dark_blue_color
+        color: #fff
+        border-radius: 5px
+        font-size: 14px
+        padding: 5px
+        width: 300px
+
+
+
+#thank-you
+  display: none
+  background: $dark_blue_color
+  text-align: center
+  color: #fff
+  padding-top: 200px
+  line-height: 1.5
+  font-weight: 200
+
+  h2
+    color: #fff
+    font-size: 72px
+
+
