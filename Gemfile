@@ -17,5 +17,7 @@ end
 gem 'sqlite3'
 gem 'mysql2',  :git => 'http://github.com/brianmario/mysql2.git'
 gem 'haml-rails'
-gem 'unicorn'
+gem 'kgio', '2.7.4'
+gem 'raindrops', '0.10.0'
+gem 'unicorn', '4.5.0'
 gem 'russian', '~> 0.6.0'
