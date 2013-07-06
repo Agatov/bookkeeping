@@ -16,6 +16,7 @@ end
 
 gem 'sqlite3'
 gem 'mysql2',  :git => 'http://github.com/brianmario/mysql2.git'
+gem 'httparty'
 gem 'haml-rails'
 gem 'kgio', '2.7.4'
 gem 'raindrops', '0.10.0'
