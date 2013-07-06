@@ -16,7 +16,20 @@ $ ->
       $('.error.phone-error').show('bounce')
       return false
 
-    sayThankYou()
+
+    $.post(
+      '/orders',
+      {
+        'order[username]': $('input[name=username]').val()
+        'order[email]': $('input[name=email]').val()
+        'order[phone]': $('input[name=phone').val()
+      },
+      (data) =>
+        if data.status == 'ok'
+          sayThankYou()
+    )
+
+
 
 
 window.sayThankYou = ->
